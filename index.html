@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tapestry</title>
+	
+	<style>
+		.day{
+			margin: 0;
+			padding: 0;
+			height: 41px;
+		}
+		.day-date{
+			color: rgb(224, 194, 154);
+			display: inline-block;
+			line-height: 40px;
+			vertical-align:top;
+			font-size: 0.5rem;
+		}
+		.dot{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin: 0;
+			margin-top: 1px;
+			margin-left: 1px;
+		}
+		.count-0{
+			background: white;
+		}
+		.count-1{
+			background: rgb(161, 255, 161);
+		}
+		.count-2{
+			background: rgb(38, 168, 38);
+		}
+		body{
+			background: antiquewhite;
+		}
+	</style>
+</head>
+<body>
+	
+	
+	
+	
+	<div class="container">
+		<div v-repeat="day : days" class="day">
+			<div v-repeat="dot : day.dots" v-on="click : setDot(day, $index)" class="dot count-{{dot}}">
+			</div>
+			<div class="day-date">
+				{{day.date}}
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<script src="bundle.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "tapestry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.10.3",
+    "moment-range": "^2.0.2",
+    "vue": "^0.12.1"
+  }
+}
