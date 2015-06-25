@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:js": "browserify ${npm_package_config_src_js} > ${npm_package_config_dist_js}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,5 +13,9 @@
     "moment": "^2.10.3",
     "moment-range": "^2.0.2",
     "vue": "^0.12.1"
+  },
+  "config": {
+    "src_js": "main.js",
+    "dist_js": "bundle.js"
   }
 }
